@@ -1,1 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform/Transition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+    <header>
+        <h1>CSS Transform/Transition</h1>
+    </header>
+
+    <nav>
+        <p>Transform and Transition</p>
+    </nav>
+
+    <section class="title">
+        <h2>CSS Transform: ROTATE/TRANSITION</h2>
+    </section>
+
+    <div class="line"></div>
+
+    <section class="boxes">
+
+        <div class="box" id="beforeBox">
+            Rotate/Transition<br>
+            Before
+        </div>
+
+        <div class="box" id="afterBox">
+            Rotate/Transition<br>
+            After
+        </div>
+
+    </section>
+
+    <div class="line"></div>
+
+    <section class="buttons">
+        <button id="transitionBtn">TRANSITION</button>
+        <button id="rotateBtn">ROTATE</button>
+    </section>
+
+    <script>
+        const transitionBtn = document.getElementById("transitionBtn");
+        const rotateBtn = document.getElementById("rotateBtn");
+
+        const beforeBox = document.getElementById("beforeBox");
+        const afterBox = document.getElementById("afterBox");
+
+        transitionBtn.addEventListener("click", function () {
+            beforeBox.classList.toggle("move");
+            afterBox.classList.toggle("move");
+        });
+
+        rotateBtn.addEventListener("click", function () {
+            afterBox.classList.toggle("rotate");
+        });
+    </script>
+
+</body>
+      </html>

@@ -1,1 +1,172 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+body {
+    background-color: #f7e1e7;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Header */
+header {
+    height: 82px;
+    background-color: #e8b7c2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #4a3035;
+}
+
+/* Navigation */
+nav {
+    height: 60px;
+    background-color: #b85c6f;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav p {
+    font-size: 17px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Title */
+.title {
+    height: 140px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title h2 {
+    font-size: 19px;
+    font-weight: bold;
+    color: #4a3035;
+}
+
+/* Dashed line */
+.line {
+    border-top: 4px dashed #6b454d;
+    width: 100%;
+}
+
+/* Boxes */
+.boxes {
+    min-height: 290px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.box {
+    width: 225px;
+    height: 150px;
+
+    background-color: #d9a6b2;
+    border: 4px solid #7d4a55;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 25px;
+    color: #3f292e;
+
+    transition: all 1s ease;
+}
+
+/* Transition */
+.box.move {
+    transform: translateY(30px);
+    background-color: #c995a2;
+}
+
+/* Rotate */
+.box.rotate {
+    transform: rotate(360deg);
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 18px 10%;
+}
+
+button {
+    width: 185px;
+    height: 50px;
+
+    background-color: #e2b0ba;
+    border: 3px solid #7d4a55;
+    border-radius: 7px;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #4a3035;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #c995a2;
+    transform: scale(1.05);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 27px;
+    }
+
+    nav p {
+        font-size: 15px;
+    }
+
+    .title h2 {
+        font-size: 17px;
+    }
+
+    .boxes {
+        gap: 30px;
+        padding: 40px 10px;
+    }
+
+    .box {
+        width: 170px;
+        height: 140px;
+        font-size: 17px;
+    }
+
+    .buttons {
+        padding: 18px 8%;
+    }
+
+    button {
+        width: 140px;
+        height: 50px;
+    }
+      }
